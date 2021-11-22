@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.me/128cb8d6-0018-4614-874e-6ef7b73caf70%2Fchain_logo.png?v=1636835740012"
+    />
+
+    <title>ficsi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap stylesheet -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="head-container">
+          <a class="navbar-brand" href="index.html" role="button">
+            <img
+              src="https://cdn.glitch.me/128cb8d6-0018-4614-874e-6ef7b73caf70%2Fchain_logo.png?v=1636835740012"
+              class="center-icon2"
+              alt=""
+              width="40"
+            />
+            <h1>ficsi</h1>
+          </a>
+          <a href="buscador.html" role="button" aria-label="Buscar" class="search-button center-icon2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="#000000"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
+          </a>
+        </div>
+      </header>
+      <div class="progreso">
+        <div class="back center-icon">
+          <a href="resumen.html" role="button" aria-label="Atrás">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-arrow-left"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="progress">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            style="width: 100%"
+            aria-valuenow="100"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-label="Barra de progreso: 100% completado"
+          ></div>
+        </div>
+      </div>
+
+      <main>
+        <div class="container">
+          <h2 class="text-dark">
+            ¿Cómo reparar un pinchazo de bicicleta?
+          </h2>
+          <div class="container-video">
+            <video
+              id="video"
+              width="320"
+              height="220"
+              align="center"
+              controls
+              preload="metadata"
+            >
+              <source
+                src="https://cdn.glitch.me/72e9ada5-5607-406c-82c9-2226550c8adc%2Freparar_un_pinchazo_de_bicicleta.mp4?v=1637196355725"
+                type="video/mp4"
+              />
+              <track
+                label="Español"
+                kind="subtitles"
+                srclang="es"
+                src="captions/vtt/sintel-en.vtt"
+                default
+              />
+            </video>
+            <div class="nav-video bg-light text-dark">
+              <div class="nav nav-pills nav-fill nav-video">
+                <div class="nav-link secondary-nav">
+                  <div class="nav-item text-dark">
+                    <span>11.123</span>
+                    <p class="navigation-p text-dark">
+                      Vistas
+                    </p>
+                  </div>
+                </div>
+                <div class="nav-link secondary-nav">
+                  <div class="nav-item text-dark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                      aria-labelledby="calificacion"
+                    >
+                      <title id="calificacion">Calificación:</title>
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                      />
+                    </svg>
+                    <p class="navigation-p text-dark">
+                      4.6
+                    </p>
+                  </div>
+                </div>
+                <a class="nav-link secondary-nav" href="#" role="button">
+                  <div class="nav-item text-dark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-heart"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                      />
+                    </svg>
+                    <p class="navigation-p text-dark">
+                      Guardar
+                    </p>
+                  </div>
+                </a>
+                <a class="nav-link secondary-nav" href="#" role="button">
+                  <div class="nav-item text-dark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-share"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                      />
+                    </svg>
+                    <p class="navigation-p text-dark">Compartir</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <p class="description">
+              Uno de los mayores problemas de los ciclistas son las ruedas
+              pinchadas. En este video te explicamos cómo solucionar esta avería
+              tan común en tu casa.
+            </p>
+          </div>
+          <div class="m-4">
+            <div class="nav nav-tabs" role="tablist">
+              <a
+                href="#pasos"
+                class="nav-item nav-link active"
+                data-bs-toggle="tab"
+                role="tab"
+                >Paso a paso</a
+              >
+
+              <a
+                href="#tools"
+                class="nav-item nav-link"
+                data-bs-toggle="tab"
+                role="tab"
+                >Herramientas</a
+              >
+            </div>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="pasos">
+                <h3 class="mt-2">Paso 1: Desmontar la rueda</h3>
+                <img
+                  class="card-img-top"
+                  src="https://cdn.glitch.me/72e9ada5-5607-406c-82c9-2226550c8adc%2Fpaso_1.jpeg?v=1637201314604"
+                  alt=""
+                />
+                <p class="steps">
+                  Voltear la bicicleta, que quede apoyada en el suelo con el
+                  manillar y el asiento.
+                  <span class="bold"
+                    >Poner un cartón en el suelo para evitar dañarla.</span
+                  >
+                  Desmontar la rueda de la bicicleta para poder trabajar con
+                  comodidad
+                </p>
+                <hr aria-hidden="true" />
+                <h3 class="mt-2">Paso 2: Desmontar la cámara</h3>
+                <img
+                  class="card-img-top"
+                  src="https://cdn.glitch.me/72e9ada5-5607-406c-82c9-2226550c8adc%2Fpaso_2.jpeg?v=1637201314604"
+                  alt=""
+                />
+                <p class="steps">
+                  Revisar el neumático en busca de algún objeto que esté
+                  enterrado y que haya podido provocar el pinchazo, en caso de
+                  existir, retirarlo con cuidado.
+                  <span class="bold">
+                    Hay que ser cuidadosos al realizar este paso y no usar
+                    elementos con filo que puedan dañar o romper la
+                    cámara.</span
+                  >
+                </p>
+                <hr aria-hidden="true" />
+                <h3 class="mt-2">Paso 3: Buscar el pinchazo</h3>
+                <img
+                  class="card-img-top"
+                  src="https://cdn.glitch.me/72e9ada5-5607-406c-82c9-2226550c8adc%2Fpaso_3.jpeg?v=1637201314604"
+                  alt=""
+                />
+                <p class="steps">
+                  Inflar el neumático y llenar una fuente con agua. Hundir el
+                  neumático en el agua e irlo girando hasta detectar algún lugar
+                  desde donde salgan burbujas, eso indicará el lugar del
+                  pinchazo. Marcar el agujero pinchando una punta o un clavo.
+                  <span class="bold"
+                    >Tener cuidado de no dañar el otro lado de la cámara.</span
+                  >
+                  Sacar la cámara del agua y secar.
+                </p>
+                <hr aria-hidden="true" />
+                <h3 class="mt-2">Paso 4: Parchar</h3>
+                <img
+                  class="card-img-top"
+                  src="https://cdn.glitch.me/72e9ada5-5607-406c-82c9-2226550c8adc%2Fpaso_4.jpeg?v=1637201314604"
+                  alt=""
+                />
+                <p class="steps">
+                  Desinflar la cámara para poder trabajar cómodamente. Quitar la
+                  marca del orificio.
+                  <span class="bold"
+                    >Lijar el lugar del pinchazo, esto hará que la superficie
+                    quede porosa y el adhesivo y el parche se peguen
+                    mejor.</span
+                  >
+                  Poner el pegamento y una vez seco al tacto, poner el parche,
+                  presionar y dejar secar.
+                </p>
+                <hr aria-hidden="true" />
+                <h3 class="mt-2">Paso 5: Revisar la cámara</h3>
+                <img
+                  class="card-img-top"
+                  src="https://cdn.glitch.me/72e9ada5-5607-406c-82c9-2226550c8adc%2Fpaso_5.jpeg?v=1637201314604"
+                  alt=""
+                />
+                <p class="steps">
+                  Hundir la parte del parche en una fuente con agua para revisar
+                  que haya quedado bien pegado.
+                  <span class="bold"
+                    >Si salen burbujas es porque el trabajo no quedó bien hecho
+                    y debe realizar el procedimiento de nuevo</span
+                  >
+                  o aplicar adhesivo en el borde que esté despegado. Si no salen
+                  burbujas, el trabajo quedó bien hecho.
+                </p>
+                <hr aria-hidden="true" />
+                <h3 class="mt-2">Paso 6: Montar la cámara y la rueda</h3>
+                <img
+                  class="card-img-top"
+                  src="https://cdn.glitch.me/72e9ada5-5607-406c-82c9-2226550c8adc%2Fpaso_6.jpeg?v=1637201314604"
+                  alt=""
+                />
+                <p class="steps">
+                  Desinflar la cámara para poder montarla en la rueda, pero
+                  <span class="bold"
+                    >procurar dejar un poco de aire en ella para que no se
+                    tuerza al instalarla</span
+                  >. Montar en la cámara desde la válvula hacia los lados. Poner
+                  el neumático en su lugar, inflar la cámara y volver montar la
+                  rueda en la bicicleta.
+                </p>
+                <hr aria-hidden="true" />
+              </div>
+              <div class="tab-pane fade" id="tools">
+                <h3 class="mt-2 tab2">Herramientas y materiales</h3>
+                <ul class="list-group lista">
+                  <li
+                    class="list-group-item d-flex justify-content-between align-items-center"
+                  >
+                    Paño
+                  </li>
+                  <li
+                    class="list-group-item d-flex justify-content-between align-items-center"
+                  >
+                    Balde con agua
+                  </li>
+                  <li
+                    class="list-group-item d-flex justify-content-between align-items-center"
+                  >
+                    Lija
+                  </li>
+                  <li
+                    class="list-group-item d-flex justify-content-between align-items-center"
+                  >
+                    <p class="items">
+                      Paleta de desmontaje
+                    </p>
+                    <span class="badge rounded-pill bg-primary"
+                      >Alternativa: Cuchara</span
+                    >
+                  </li>
+                  <li
+                    class="list-group-item d-flex justify-content-between align-items-center"
+                  >
+                    Inflador
+                  </li>
+                  <li
+                    class="list-group-item d-flex justify-content-between align-items-center"
+                  >
+                    Pegamento
+                  </li>
+                  <li
+                    class="list-group-item d-flex justify-content-between align-items-center"
+                  >
+                    <p class="items">Parche</p>
+                    <span class="badge rounded-pill bg-primary"
+                      >Alternativa: Pedazo de cámara vieja</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="rating">
+            <p class="color-blue">Calificá este video</p>
+            <div class="stars center-icon">
+              <button
+                class="star center-icon"
+                aria-label="Calificar con 1 estrella"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#0d6efd"
+                  class="bi bi-star"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="star center-icon"
+                aria-label="Calificar con 2 estrellas"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#0d6efd"
+                  class="bi bi-star"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="star center-icon"
+                aria-label="Calificar con 3 estrellas"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#0d6efd"
+                  class="bi bi-star"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="star center-icon"
+                aria-label="Calificar con 4 estrellas"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#0d6efd"
+                  class="bi bi-star"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="star center-icon"
+                aria-label="Calificar con 5 estrellas"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#0d6efd"
+                  class="bi bi-star"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="d-grid gap-2">
+            <a href="index.html" class="btn btn-primary" role="button"
+              >Volver al Inicio</a
+            >
+          </div>
+        </div>
+      </main>
+      <nav class="bottom-nav">
+        <ul class="nav nav-pills nav-fill">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" role="button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-house-door-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"
+                />
+              </svg>
+              <p class="navigation-p">
+                Inicio
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#" role="button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-heart-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                />
+              </svg>
+              <p class="navigation-p">
+                Favoritos
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#" role="button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-person-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+                />
+              </svg>
+              <p class="navigation-p">
+                Perfil
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#" role="button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-bell-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"
+                />
+              </svg>
+              <p class="navigation-p">Notificaciones</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <script>
+      $(function() {
+        $("#myList a:last-child").tab("show");
+      });
+    </script>
+  </body>
+</html>
