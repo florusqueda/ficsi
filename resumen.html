@@ -85,11 +85,9 @@
           <div
             class="progress-bar"
             role="progressbar"
-            style="width: 75%"
-            aria-valuenow="75"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            aria-label="Barra de progreso: 75% completado"
+            style="width: 90%"
+            aria-valuetext="Paso 5 de 6"
+            aria-valuenow="90"
           ></div>
         </div>
       </div>
@@ -112,8 +110,8 @@
                 />
               </svg>
             </div>
-            <h3 class="subtitulo text-dark">
-              Dificultad: Fácil
+            <h3 class="subtitulo2 text-dark">
+              Dificultad: <strong>Fácil</strong>
             </h3>
           </div>
           <div class="subseccion bottom-hr">
@@ -134,8 +132,8 @@
                 />
               </svg>
             </div>
-            <h3 class="subtitulo text-dark">
-              Tiempo de ejecución: 5 minutos
+            <h3 class="subtitulo2 text-dark">
+              Tiempo de ejecución: <strong>5 minutos</strong>
             </h3>
           </div>
 
@@ -158,52 +156,21 @@
               Herramientas y materiales
             </h3>
           </div>
-          <div class="container-fluid">
-          <ul class="list-group lista">
-            <li 
-              class="list-group-item d-flex justify-content-between align-items-center tools text-body"
-            >
-              Paño
+          <div class="container-fluid mb40">
+          <ul class="herramientas">
+            <li class="tools text-body">Paño</li>
+            <li class="tools text-body">Balde con agua</li>
+            <li class="tools text-body">Lija</li>
+            <li class="tools text-body">Paleta de desmontaje <span class="badge rounded-pill bg-secondary"
+                >Alternativa: Cuchara</span>
             </li>
-            <li 
-              class="list-group-item d-flex justify-content-between align-items-center tools text-body"
-            >
-              Balde con agua
+            <li class="tools text-body">Inflador</li>
+            <li class="tools text-body">Pegamento</li>
+            <li class="tools text-body">Parche <span class="badge rounded-pill bg-secondary"
+                >Alternativa: Pedazo de cámara vieja</span>
             </li>
-            <li 
-              class="list-group-item d-flex justify-content-between align-items-center tools text-body"
-            >
-              Lija
-            </li>
-            <li 
-              class="list-group-item d-flex justify-content-between align-items-center tools text-body"
-            >
-              
-                Paleta de desmontaje
-              
-              <span class="badge rounded-pill bg-primary"
-                >Alternativa: Cuchara</span
-              >
-            </li>
-            <li 
-              class="list-group-item d-flex justify-content-between align-items-center tools text-body"
-            >
-              Inflador
-            </li>
-            <li 
-              class="list-group-item d-flex justify-content-between align-items-center tools text-body"
-            >
-              Pegamento
-            </li>
-            <li 
-              class="list-group-item d-flex justify-content-between align-items-center tools text-body"
-            >
-              Parche
-              <span class="badge rounded-pill bg-primary"
-                >Alternativa: Pedazo de cámara vieja</span
-              >
-            </li>
-          </ul>
+            
+            </ul>
           </div>
           <div class="subseccion">
             <div class="center-icon text-dark">
@@ -226,32 +193,32 @@
           </div>
           <div class="container-fluid">
           <ol class="list-group list-group-numbered lista">
-            <li class="list-group-item tools text-body">Desmontar la rueda</li>
-            <li class="list-group-item tools text-body">Desmontar la cámara</li>
-            <li class="list-group-item tools text-body">Buscar el pinchazo</li>
-            <li class="list-group-item tools text-body">Parchar la cámara</li>
-            <li class="list-group-item tools text-body">Revisar la cámara</li>
-            <li class="list-group-item tools text-body">
+            <li class="list-group-item pasoapaso text-body">Desmontar la rueda</li>
+            <li class="list-group-item pasoapaso text-body">Desmontar la cámara</li>
+            <li class="list-group-item pasoapaso text-body">Buscar el pinchazo y lijar la cámara</li>
+            <li class="list-group-item pasoapaso text-body">Parchar la cámara</li>
+            <li class="list-group-item pasoapaso text-body">Inflar y revisar la cámara</li>
+            <li class="list-group-item pasoapaso text-body">
               Montar la cámara y la rueda
             </li>
           </ol>
           </div>
-          <div class="d-grid gap-2">
+          <div class="d-grid gap-2 m20">
             <a href="video.html" class="btn btn-primary" role="button"
-              >Ver video</a
+              >Ir al tutorial completo</a
             >
           </div>
         </div>
       </main>
       <nav class="bottom-nav">
-        <ul class="nav nav-pills nav-fill">
+        <ul class="nav nav-pills nav-fill sombra">
           <li class="nav-item">
             <a class="nav-link" href="index.html" role="button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
-                fill="currentColor"
+                fill="#6c757d"
                 class="bi bi-house-door-fill"
                 viewBox="0 0 16 16"
               >
@@ -259,7 +226,7 @@
                   d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"
                 />
               </svg>
-              <p class="navigation-p">
+              <p class="navigation-p inactive">
                 Inicio
               </p>
             </a>
@@ -271,7 +238,7 @@
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
-                fill="currentColor"
+                fill="#6c757d"
                 class="bi bi-heart-fill"
                 viewBox="0 0 16 16"
               >
@@ -280,7 +247,7 @@
                   d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
                 />
               </svg>
-              <p class="navigation-p">
+              <p class="navigation-p inactive">
                 Favoritos
               </p>
             </a>
@@ -292,7 +259,7 @@
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
-                fill="currentColor"
+                fill="#6c757d"
                 class="bi bi-person-fill"
                 viewBox="0 0 16 16"
               >
@@ -300,7 +267,7 @@
                   d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
                 />
               </svg>
-              <p class="navigation-p">
+              <p class="navigation-p inactive">
                 Perfil
               </p>
             </a>
@@ -312,7 +279,7 @@
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
-                fill="currentColor"
+                fill="#6c757d"
                 class="bi bi-bell-fill"
                 viewBox="0 0 16 16"
               >
@@ -320,7 +287,7 @@
                   d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"
                 />
               </svg>
-              <p class="navigation-p">Notificaciones</p>
+              <p class="navigation-p inactive">Notificaciones</p>
             </a>
           </li>
         </ul>
